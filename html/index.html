@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>xc-loadingscreen</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background"><img src="background.png" /></div>
+      <div class="logo"><img src="logo.png" /></div>
+      <div class="text"><span>Loading Resources...</span></div>
+      <audio id="loading" autoplay loop>
+        <source src="loading.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+  </body>
+  <script>
+    var vid = document.getElementById("loading");
+    vid.volume = 0.3;
+  </script>
+</html>
